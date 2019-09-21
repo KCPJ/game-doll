@@ -1,5 +1,6 @@
+[preload  storage="./data/bgimage/title.jpg"  ]
 [preload  storage="./data/bgimage/bg_base.png"  ]
 [preload  storage="./data/bgimage/room_boy15_night_light_by_norfolkdistrict.jpg"  ]
-[preload  storage="./data/bgimage/tera.jpg"  ]
+[preload  storage="./data/bgimage/うすの丘２.jpg"  ]
 [preload  storage="./data/fgimage/default/1990-2_(1).png"  ]
 [return] 

@@ -1,10 +1,28 @@
 [_tb_system_call storage=system/_preview.ks ]
 
 [mask time=10]
-[bg  time="10"  method="crossfade"  storage="title.jpg"  ]
+[bg  time="10"  method="crossfade"  storage="うすの丘２.jpg"  ]
 [tb_show_message_window] 
 [chara_mod  name="ミカ"  time="10"  cross="true"  storage="chara/1/josei_01_e.png"  ]
+[chara_show  name="ミカ"  time="10"  wait="true"  top="40"  width="400"  height="1100"  storage="chara/1/josei01.png"  ]
 [mask_off time=10]
+[tb_start_text mode=1 ]
+#
+・・・・[p]
+[_tb_end_text]
+
+[glink  color="gray"  storage="scene1.ks"  size="20"  target="*5-yes"  text="告白する"  x="345"  y="171"  width="478"  height="30"  _clickable_img=""  ]
+[glink  color="gray"  storage="scene1.ks"  size="20"  text="告白しない"  x="345"  y="258"  width="478"  height="30"  _clickable_img=""  target="*5-no"  ]
+[s  ]
+*5-yes
+
+[quake  time="300"  count="3"  hmax="10"  wait="true"  ]
+[tb_hide_message_window  ]
+[chara_hide  name="ミカ"  time="1000"  wait="true"  pos_mode="true"  ]
+*fin
+
+[tb_image_hide  time="1000"  ]
+[bg  time="1000"  method="crossfade"  storage="title.jpg"  ]
 [tb_ptext_show  x="564"  y="216"  size="30"  color="0xffffff"  time="1000"  text="fin"  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="276"  y="272"  size="50"  color="0xfcfcff"  time="1000"  anim="false"  face="fantasy"  text="-忘れたくない淡い思い出-"  edge="0x6a7491"  shadow="undefined"  ]
 [l  ]
@@ -17,13 +35,19 @@
 [tb_ptext_show  x="269"  y="281"  size="50"  color="0xfcfcff"  time="1000"  anim="false"  face="fantasy"  text="「あなたなりのエモい写真」"  edge="0x6a7491"  shadow="undefined"  ]
 [l  ]
 [tb_ptext_hide  time="1000"  ]
-[tb_ptext_show  x="154"  y="296"  size="37"  color="0xfcfcff"  time="1000"  anim="false"  face="fantasy"  text="※続きは、次の場所へ行ってから再プレイしてください。"  edge="0x6a7491"  shadow="undefined"  ]
+[tb_ptext_show  x="122"  y="296"  size="37"  color="0xfcfcff"  time="1000"  anim="false"  face="fantasy"  text="※物語の続きは、次の場所へ行ってから再プレイしてください。"  edge="0x6a7491"  shadow="undefined"  ]
 [tb_ptext_hide  time="1000"  ]
 [jump  storage="scene1.ks"  target="*5-common"  ]
 *5-no
 
-[tb_hide_message_window  ]
+[tb_start_text mode=1 ]
+そろそろ・・[p]
+帰ろっか・・[p]
+[_tb_end_text]
+
 [chara_hide  name="ミカ"  time="1000"  wait="true"  pos_mode="true"  ]
+[tb_hide_message_window  ]
+[jump  storage="scene1.ks"  target="*fin"  ]
 [tb_image_hide  time="1000"  ]
 [bg  time="1000"  method="crossfade"  storage="bg_base.png"  ]
 [tb_hide_message_window  ]
@@ -56,11 +80,11 @@
 *大枠-2周目
 
 [tb_image_hide  time="1000"  ]
-[bg  time="1000"  method="crossfade"  storage="tera.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="うすの丘２.jpg"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
-本福寺水御堂[p]
+うずの丘記念館[p]
 自分にとっての[p]
 忘れたくない淡い想い出[p]
 今となっては[p]

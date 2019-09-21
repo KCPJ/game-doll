@@ -417,6 +417,8 @@
 [quake  time="300"  count="3"  hmax="10"  wait="true"  ]
 [tb_hide_message_window  ]
 [chara_hide  name="ミカ"  time="1000"  wait="true"  pos_mode="true"  ]
+*fin
+
 [tb_image_hide  time="1000"  ]
 [bg  time="1000"  method="crossfade"  storage="title.jpg"  ]
 [tb_ptext_show  x="564"  y="216"  size="30"  color="0xffffff"  time="1000"  text="fin"  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
@@ -436,8 +438,14 @@
 [jump  storage="scene1.ks"  target="*5-common"  ]
 *5-no
 
-[tb_hide_message_window  ]
+[tb_start_text mode=1 ]
+そろそろ・・[p]
+帰ろっか・・[p]
+[_tb_end_text]
+
 [chara_hide  name="ミカ"  time="1000"  wait="true"  pos_mode="true"  ]
+[tb_hide_message_window  ]
+[jump  storage="scene1.ks"  target="*fin"  ]
 [tb_image_hide  time="1000"  ]
 [bg  time="1000"  method="crossfade"  storage="bg_base.png"  ]
 [tb_hide_message_window  ]
@@ -470,11 +478,11 @@
 *大枠-2周目
 
 [tb_image_hide  time="1000"  ]
-[bg  time="1000"  method="crossfade"  storage="tera.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="うすの丘２.jpg"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
-本福寺水御堂[p]
+うずの丘記念館[p]
 自分にとっての[p]
 忘れたくない淡い想い出[p]
 今となっては[p]

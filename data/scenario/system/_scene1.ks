@@ -18,5 +18,4 @@
 [preload  storage="./data/fgimage/chara/1/josei_01_a.png"  ]
 [preload  storage="./data/bgimage/title.jpg"  ]
 [preload  storage="./data/bgimage/room_boy15_night_light_by_norfolkdistrict.jpg"  ]
-[preload  storage="./data/bgimage/tera.jpg"  ]
 [return]
